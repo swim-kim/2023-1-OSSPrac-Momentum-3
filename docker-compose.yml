@@ -1,4 +1,3 @@
-version: '3.0'  # 버전 정보 
 
 services:  # 컨테이너의 서비스라는 것을 정의
   hw5: # 서비스 명 
@@ -6,6 +5,3 @@ services:  # 컨테이너의 서비스라는 것을 정의
     build: .   #dockerfile이 있는 위치
     ports:
       - "80:80" # 포트 지정
-  
-  production:
-    image: ${DOCKER_USER_ID}/momentum:3.0:${BUILD_NUMBER}
